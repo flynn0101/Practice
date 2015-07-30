@@ -1,0 +1,28 @@
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,
+dd,input{margin: 0;padding: 0;border: 0;}
+body{font-size: 12px;}
+img{border: none;}
+ul,ol{list-style: none;}
+input,select,textarea{outline: none;}
+textarea{resize:none;}
+a{text-decoration: none;}
+
+/*清浮动*/
+.clearfix:after{content: "";display: block;clear: both;}
+.clearfix{zoom:1;}
+
+/*头部的一小部分*/
+.headerBox{
+	background: #F5F5F5; height: 60px;
+}
+.logo{padding-top: 19px; width: 320px;}
+.searchBox{width: 320px;}
+.search_input{width: 228px; height: 36px; line-height: 36px; border: 2px solid #9F9F9F; border-right: none; margin-top: 10px;}
+
+
+
+
+/*通用的样式*/
+.comWidth{width: 970px; margin: 0 auto;}
+.fl{float: left;}
+.fr{float: right;}
