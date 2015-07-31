@@ -16,11 +16,25 @@ a{text-decoration: none;}
 	background: #F5F5F5; height: 60px;
 }
 .logo{padding-top: 19px; width: 320px;}
-.searchBox{width: 320px;}
-.search_input{width: 228px; height: 36px; line-height: 36px; border: 2px solid #9F9F9F; border-right: none; margin-top: 10px;}
-
-
-
+.searchBox{width: 320px; padding-top: 10px;  position: relative;}
+.search_input{width: 216px; height: 14px; line-height: 14px; 
+	border: 2px solid #9F9F9F; border-right: none; 
+	padding: 11px 6px; font-size: 14px;}
+.search_btn{width: 90px; height: 40px; 
+	background: url(../images/search_btn.jpg) left top no-repeat;}
+/*搜索交互*/
+.search_hover{border-color: #3EABFF;}
+.search_show{width: 440px; padding: 2px 3px; border: 2px solid #3EABFF; position: absolute;
+	left: 0; top: 48px; background: #FFF;}
+.search_list{width: 259px; font-size: 14px; border-top: 1px solid #F3F3F3; border-right: 1px solid #F3F3F3;}
+.search_list li{height:30px; line-height: 30px; border-bottom: 1px solid #F3F3F3;
+	padding: 0 8px 0 5px;}
+.search_list .active{background: #F3F3F3;}
+.search_list li a{float: left; color: #8F8F8F;}
+.search_list li span{float: right; font-size: 12px; color: #8F8F8F;}
+.imgShow{width: 180px; background: #F3F3F3;}
+.imgShow dt{width: 70px; float: left;}
+.imgShow dt img{width: 70px; height: 105px; display: block;}
 
 /*通用的样式*/
 .comWidth{width: 970px; margin: 0 auto;}
