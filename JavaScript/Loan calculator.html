@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Loan Caculator</title>
+	<style type="text/css"> /*CSS样式表：定义了程序输出的样式*/
+	.output {font-weight: bold;}
+	#payment {text-decoration: underline;}
+	#graph {border: solid black 1px;}
+	th, td {vertical-align: top;} /*表格单元格对齐方式为顶端对齐*/
+	</style>
+</head>
+<body>
+<!--
+	这是一个HTML表格，其中包含<input>元素可以用来输入数据。程序将在
+	<span>元素中显示计算结果，这些元素都具有类似"interset"和"years"的id，
+	这些id将在表格下面的JavaScript代码中用到。有一些input元素定义了"onchange"或"onclick"的事件处理程序，以便用户在输入数据或者点击inputs时
+	执行指定的JavaScript代码段。
+-->
+<table>
+	<tr><th>Enter Loan Data:</th>
+		<td></td>
+		<th>Loan Balance, Cumulative Equity, and Interset Payments</th></tr>
+	<tr><td>Amount of the loan ($):</td>
+		<td><input id="amount" onchange="calculate();"></td>
+		<td rowspan="8">
+		<canvas id="graph" width="400" height="250"></canvas></td></tr>
+	<tr><td>Annual interest (%):</td>
+		<td><input id="apr" onchange="calculate()"></td></tr>
+	<tr><td>Repayment period (years):</td>
+		<td><input id="years" onchange="calculate()"></td>
+	<tr><td>Zipcode (to find lenders):</td>
+		<td><input id="zipcode" onchange="calculate()"></td>
+	<tr><td>Approximate Payments:</td>
+		<td><button onclick="calculate">Calculate</button>></td></tr>
+	<tr><th>Monthly payment:</th>
+		<td>$<span class="output" id="payment"></span></td></tr>
+	<tr><td>Total payment:</td>
+		<td>$<span class="output" id="total"></span></td></tr>
+	<tr><td>Total interest:</td>
+		<td>$<span class="output" id="totalinterest"></span></td></tr>
+	<tr><th>Sponsors:</th><td colspan="2">
+		Apply for your loan with one of these fine lenders:
+		<div id="lenders"></div></td></tr>
+</table>
+<script>
+	"use strict"; //如果浏览器支持的话，则开启ECMAScript 5的严格模式
+	/*
+	
+	*/
+</script>
+
+</body>
+</html>
