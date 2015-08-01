@@ -72,6 +72,12 @@
 
 		//如果结果没有超过JavaScript能表示的数字范围，且用户的输入也正确
 		//这里所表示的结果就是合法的
+		if (isFinite(mothly)) {
+			//将数据填充至输出字段的位置，四舍五入到小数点后两位数字
+			payment.innerHTML = mothly.toFixed(2);
+			total.innerHTML = (mothly * payments).toFixed(2);
+			totalinterest.innerHTML = ((mothly * payments) - principal).toFixed(2);
+		};
 
 	}
 </script>
